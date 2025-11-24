@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1>Resume Builder</h1>
+      <p>Exact sample-style resume.Fill the form, preview & download as PDF.</p>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="form-area">
+      <form id="resumeForm" class="form-card">
+        <h2>Enter your details</h2>
+
+        <div class="row">
+          <label>Full name
+            <input name="name" placeholder="Enter Your Full Name" required>
+          </label>
+          <label>Profession / Title
+            <input name="title" placeholder="E.g., Software Engineer">
+          </label>
+        </div>
+
+        <div class="row">
+          <label>Mobile
+            <input name="mobile" placeholder="+91-XXXXXXXXXX">
+          </label>
+          <label>Email
+            <input name="email" placeholder="email@example.com">
+          </label>
+        </div>
+
+        <label>Location
+          <input name="location" placeholder="">
+        </label>
+
+        <label>Profile Summary (short)
+          <textarea name="summary" placeholder="A focused and goal-oriented student ..."></textarea>
+        </label>
+
+        <label>Education (one per line)
+          <textarea name="education" placeholder="Degree — Institute — Year"></textarea>
+        </label>
+
+        <label>Skills (comma separated)
+          <input name="skills" placeholder="Communication, Teamwork, Leadership">
+        </label>
+
+        <label>Technical Skills (comma separated)
+          <input name="techskills" placeholder="C, Python, Java, HTML">
+        </label>
+
+        <label>Projects (one per line)
+          <textarea name="projects" placeholder="Project Name — short description"></textarea>
+        </label>
+
+        <label>Extra-curricular / Certifications (one per line)
+          <textarea name="extra" placeholder="Webinar: Introduction to Arduino"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="button" id="previewBtn">Update Preview</button>
+          <button type="button" id="downloadBtn">Download PDF</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="preview-area">
+      <h2>Preview</h2>
+      <iframe id="previewFrame" src="resume.html" title="Resume preview"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer" align="center"> Use Print → Save as PDF for best results.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
