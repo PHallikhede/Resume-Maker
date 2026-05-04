@@ -1,0 +1,8 @@
+name=CI
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest  # GitHub Runner
+    steps:
+      -uses:actions/checkout@4 # clone the code
+      -uses:docker/setup-docker-action@v5
